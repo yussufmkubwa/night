@@ -1,0 +1,100 @@
+/* Root colors */
+:root {
+  --green: #2ecc71;
+  --blue: #3498db;
+  --light-green: #a2f5c1;
+  --light-blue: #d0e8ff;
+  --text-color: #ffffff;
+  --hover-bg: #2c3e50;
+}
+
+/* Layout structure */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  background-color: var(--light-blue);
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(to bottom, var(--green), var(--blue));
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar-links a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-links a:hover,
+.sidebar-links a.active {
+  background-color: var(--hover-bg);
+}
+
+.sidebar-links .icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Logout section */
+.logout-section {
+  margin-top: auto;
+  padding: 0 20px;
+}
+
+.logout-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+.logout-link:hover {
+  background-color: var(--hover-bg);
+}
+
+.logout-link .icon {
+  margin-right: 10px;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f9ff;
+  overflow-y: auto;
+}

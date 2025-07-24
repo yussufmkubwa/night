@@ -1,0 +1,68 @@
+<div class="irrigation-container">
+  <h2>Irrigation Control</h2>
+  <p>Manage your irrigation zones and adjust scheduling.</p>
+
+  <div class="irrigation-zone">
+    <h3>Irrigation Zone 1: Maize Field</h3>
+    <div class="zone-status">
+      <p>Current Status: <span class="status-active">Irrigating</span></p>
+      <p>Time Remaining: <span>15 minutes</span></p>
+    </div>
+    <div class="zone-controls">
+      <button class="btn-primary">Start Now</button>
+      <button class="btn-danger">Stop</button>
+      <button class="btn-secondary">Edit Schedule</button>
+    </div>
+  </div>
+
+  <div class="irrigation-zone">
+    <h3>Irrigation Zone 2: Vegetable Garden</h3>
+    <div class="zone-status">
+      <p>Current Status: <span class="status-inactive">Stopped</span></p>
+      <p>Next Schedule: <span>Tomorrow at 6:00 AM</span></p>
+    </div>
+    <div class="zone-controls">
+      <button class="btn-primary">Start Now</button>
+      <button class="btn-danger" disabled>Stop</button>
+      <button class="btn-secondary">Edit Schedule</button>
+    </div>
+  </div>
+
+  <div class="schedule-section">
+    <h3>Irrigation Schedules</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Duration (Minutes)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maize Field</td>
+          <td>Daily</td>
+          <td>05:00 AM</td>
+          <td>30</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Vegetable Garden</td>
+          <td>Mon, Thu</td>
+          <td>06:00 AM</td>
+          <td>20</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn-add">Add New Schedule</button>
+  </div>
+</div>

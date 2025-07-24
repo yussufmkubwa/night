@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f6fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.monitoring-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.monitoring-container h2 {
+  font-size: 2rem;
+  color: #2d5be3;
+  margin-bottom: 8px;
+}
+
+.monitoring-container p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.data-section {
+  margin-bottom: 40px;
+}
+
+.data-section h3 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+}
+
+.sensor-card,
+.seed-status-card {
+  background: linear-gradient(to bottom right, #edf2fb, #ffffff);
+  border-left: 6px solid #2d5be3;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.sensor-card:hover,
+.seed-status-card:hover {
+  transform: translateY(-5px);
+}
+
+.sensor-card h4,
+.seed-status-card h4 {
+  color: #2d5be3;
+  margin-bottom: 10px;
+}
+
+.data-value {
+  font-weight: bold;
+  color: #111;
+}
+
+.data-value.good {
+  color: #4caf50;
+}
+
+.data-value.fair {
+  color: #ff9800;
+}
+
+.data-value.bad {
+  color: #f44336;
+}
+
+@media (min-width: 768px) {
+  .data-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .sensor-card,
+  .seed-status-card {
+    margin-bottom: 0;
+  }
+}
