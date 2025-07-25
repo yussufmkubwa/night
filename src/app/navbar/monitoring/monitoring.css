@@ -1,89 +1,67 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f6fc;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
 .monitoring-container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 24px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  background-color: #f9fbfc;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
 }
 
-.monitoring-container h2 {
+.page-title {
   font-size: 2rem;
-  color: #2d5be3;
-  margin-bottom: 8px;
+  margin-bottom: 0.25rem;
 }
 
-.monitoring-container p {
-  margin-bottom: 30px;
-  color: #666;
+.page-subtitle {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
 }
 
-.data-section {
-  margin-bottom: 40px;
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #34495e;
 }
 
-.data-section h3 {
-  font-size: 1.4rem;
-  color: #1e3a8a;
-  margin-bottom: 16px;
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
 }
 
 .sensor-card,
 .seed-status-card {
-  background: linear-gradient(to bottom right, #edf2fb, #ffffff);
-  border-left: 6px solid #2d5be3;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
 .sensor-card:hover,
 .seed-status-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .sensor-card h4,
 .seed-status-card h4 {
-  color: #2d5be3;
-  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
 }
 
 .data-value {
-  font-weight: bold;
-  color: #111;
+  font-weight: 600;
+  color: #2980b9;
 }
 
 .data-value.good {
-  color: #4caf50;
+  color: #27ae60;
 }
 
-.data-value.fair {
-  color: #ff9800;
+.data-value.warning {
+  color: #e67e22;
 }
 
-.data-value.bad {
-  color: #f44336;
-}
-
-@media (min-width: 768px) {
-  .data-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
-  .sensor-card,
-  .seed-status-card {
-    margin-bottom: 0;
-  }
+.data-date {
+  font-weight: 500;
+  color: #7f8c8d;
 }

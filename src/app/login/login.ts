@@ -11,7 +11,12 @@ import { Router } from '@angular/router';
   styleUrl: './login.css'
 })
 export class Login {
+passwordFieldType: any;
+togglePasswordVisibility() {
+throw new Error('Method not implemented.');
+}
   loginForm: FormGroup;
+showPassword: any;
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.loginForm = this.fb.group({
